@@ -1,11 +1,13 @@
 <div>
   <label>source:
-    <input [(ngModel)]="map.source" placeholder="source">
+    <input [(ngModel)]="journey.source" placeholder="source">
   </label>
 
   <label>destination:
-    <input [(ngModel)]="map.destination" placeholder="destination">
+    <input [(ngModel)]="journey.destination" placeholder="destination">
   </label>
 
-  {{ map.source }} - to - {{ map.destination }}
+  {{ journey.source }} - to - {{ journey.destination }}
+
+  <div #gmap class="map"></div>
 </div>

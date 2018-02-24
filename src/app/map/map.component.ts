@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
+import { ViewChild } from '@angular/core';
+import { } from '@types/googlemaps';
 
-import { Map } from './map';
+import { Journey } from '../journey';
 
 @Component({
   selector: 'app-map',
@@ -8,8 +10,19 @@ import { Map } from './map';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent {
-  map: Map = {
+  @ViewChild('gmap') gmapElement: any;
+  map: google.maps.Map;
+  journey: Journey = {
     source: 'Mumbai',
     destination: 'Pune'
   };
+
+  ngOnInit() {
+    const mapProp = {
+      center: new google.maps.LatLng(18.5793, 73.8143),
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
+  }
 }

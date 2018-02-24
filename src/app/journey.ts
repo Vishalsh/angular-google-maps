@@ -1,4 +1,4 @@
-export class Map {
+export class Journey {
   source: string;
   destination: string;
 }
