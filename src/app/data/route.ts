@@ -1,4 +1,4 @@
-export const routeData = [
+export const route = [
   {
     "lat": 8.893260000000001,
     "lng": 76.61427

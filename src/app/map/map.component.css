@@ -1,4 +1,13 @@
 .map {
-  height: 700px;
+  height: calc(100vh - 60px);
   width: 100%;
+}
+
+form {
+  margin: 20px auto;
+  width: 450px;
+}
+
+label {
+  padding: 0 10px;
 }

@@ -2,8 +2,8 @@ import {Component} from '@angular/core';
 import {ViewChild} from '@angular/core';
 import {} from '@types/googlemaps';
 
-import {Journey} from '../journey';
-import {routeData} from './routeData';
+import {RouteService} from '../route/route.service';
+import {Location} from '../route/location';
 
 @Component({
   selector: 'app-map',
@@ -13,21 +13,28 @@ import {routeData} from './routeData';
 export class MapComponent {
   @ViewChild('gmap') gmapElement: any;
   map: google.maps.Map;
-  journey: Journey = {
-    source: 'Mumbai',
-    destination: 'Pune'
-  };
+  source: string;
+  destination: string;
+  route: Location[];
+
+  constructor(private routeService: RouteService) {
+  }
 
   ngOnInit() {
     const mapProp = {
-      center: routeData[0],
+      center: { // initial center location
+        "lat": 8.893260000000001,
+        "lng": 76.61427
+      },
       zoom: 10,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
+  }
 
+  private drawMarkers(): void {
     const sourceMarker = new google.maps.Marker({
-      position: routeData[0],
+      position: this.route[0],
       map: this.map,
       icon: {
         url: '../../assets/map-start-point.svg',
@@ -38,11 +45,11 @@ export class MapComponent {
     });
 
     new google.maps.InfoWindow({
-      content: `Lat: ${routeData[0].lat} Lng: ${routeData[0].lng}`
+      content: `Lat: ${this.route[0].lat} Lng: ${this.route[0].lng}`
     }).open(this.map, sourceMarker);
 
     const destinationMarker = new google.maps.Marker({
-      position: routeData[routeData.length - 1],
+      position: this.route[this.route.length - 1],
       map: this.map,
       icon: {
         url: '../../assets/map-end-point.svg',
@@ -53,10 +60,12 @@ export class MapComponent {
     });
 
     new google.maps.InfoWindow({
-      content: `Lat: ${routeData[routeData.length - 1].lat} Lng: ${routeData[routeData.length - 1].lng}`
+      content: `Lat: ${this.route[this.route.length - 1].lat} Lng: ${this.route[this.route.length - 1].lng}`
     }).open(this.map, destinationMarker);
+  }
 
-    const route = new google.maps.Polyline({
+  private drawLine(): void {
+    const line = new google.maps.Polyline({
       path: [],
       geodesic: true,
       strokeColor: '#FF0000',
@@ -66,12 +75,22 @@ export class MapComponent {
       map: this.map
     });
 
-    for (let i = 0; i < routeData.length; i++) {
+    for (let i = 0; i < this.route.length; i++) {
       let pct = 0;
-      setTimeout(function (coords) {
+      setTimeout((coords) => {
         const latlng = new google.maps.LatLng(coords.lat, coords.lng);
-        route.getPath().push(latlng);
-      }, 30 * i, routeData[i]);
+        line.getPath().push(latlng);
+      }, 30 * i, this.route[i]);
     }
+  }
+
+  getRoute(event: any): void {
+    event.preventDefault();
+    this.routeService.getRoute(this.source, this.destination)
+      .subscribe(route => this.route = route);
+
+    this.map.setCenter(this.route[0]);
+    this.drawMarkers();
+    this.drawLine();
   }
 }

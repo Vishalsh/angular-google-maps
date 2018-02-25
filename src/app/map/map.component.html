@@ -1,13 +1,13 @@
-<div>
-  <label>source:
-    <input [(ngModel)]="journey.source" placeholder="source">
+<form (submit)="getRoute($event)">
+  <label>From:
+    <input [(ngModel)]="source" placeholder="source" name="source">
   </label>
 
-  <label>destination:
-    <input [(ngModel)]="journey.destination" placeholder="destination">
+  <label>To:
+    <input [(ngModel)]="destination" placeholder="destination" name="destination">
   </label>
 
-  {{ journey.source }} - to - {{ journey.destination }}
+  <button type="submit">Go</button>
 
-  <div #gmap class="map"></div>
-</div>
+</form>
+<div #gmap class="map"></div>
