@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 47 47">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        opacity: 0.2;
+        mix-blend-mode: multiply;
+      }
+
+      .cls-3 {
+        fill: #626f7a;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>zenegyicon-end-point</title>
+  <g class="cls-1">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="design">
+        <g>
+          <g>
+            <image class="cls-2" width="47" height="47" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAACXBIWXMAAAsSAAALEgHS3X78AAAEYElEQVRoQ9WZa3PbOAxFjxwnaVO33f3/f7LddZqHE6sfyGteQpQoJZ3ZDWYwVPQ8gC5ByBnGceSj2q53wv/ZPjT8vnfCWhuGYeidAzD+QZ2+Cz4Ar4KPMb4nmGHrtTPAc6PbaKNvp42tIGyEN/BhwbHRbez45gBWyWYBemfjLuxzE+DZxnPYN+oxa4PowjfABXeVt6/Cto57AGfzVxtf83k6BimIYU0Ai7KZARfgPm9f2/aeOgCZw740XAH5G+m+gdnMB/Cd+T77dfYbG3VMAUACEfgp+7ONO0oQsjMr3kBPNq5vyUOgt+afbN81bXjBPgNPwCPp+U95n56jIC5vYM6a8DnrUSpXJMAbEuznht9S3oTDv1BDP+TzflFPdp1/GYdhmJXPmswLXhn/BNwBX7If8nhHCUDwmozK+iMJ+D7fK86PWD4X5TOBn8m6NH5LAvwCfAO+5vGQ/Y6S/at8S8E/kTJ+T0pAS15x0o4kjs2Z94m6p866oP8CvlMCUfZVgaDAK+t6O3sKeKuUegDN7M/Bx4kaJXOgwMu/kt7IZ0rmB8pkfaLOuoPHEqrqdKZwLMvGJAMl65JNC/478DcJ/ht9eJ8PUKC9EqmMev1vWi/zEf6WMlkPFPlIOgdK2WxpXjr3/ZrIqkIqnV6F+pk3W5qwKpMKILpPRkgPPTHNuOaBT2JfJ/TmLh7LZgt+sDFKx7WvIO7MvdZ7qYyTU9nWNXpb3mrE+j+xXuZj9r0t0Op60/Aojx2lFJ5mrtV9lfVFcFi3SMUgvAHbB/djgheAH7829+ujzgnblfXgoX0jBePS8n29a9Y4NjZtDbwWCt/uOTZuuW7pHhPrwfvN4odEqyeXS+O6R6uXPzG9Pq6shO3K5uBjFvTg2NpG93LoPYu6SnWW7r4wnahX182Z94jjF5A/XDX6gWltf7Xt2Jg9kHocHx/z8biyLgawJvNn6iVcEGptvR2A9ODWSqre5l/gmMf77ApAb0AJqxSwtjGLOhe8gx+pFyTJ65l2e/BIgf8J/JP9yDSAF9r6r6yCH8dRPz8M1C2qJKO21r+YPOMnpr2NtwK/KPA/SPB6A+pronTeLJsWvC8u3qvoeA/+SIJXABFemY+ymdhSqXT4E2XV9OUbak37W5k7LulINnOZrybsqs9Akw4U+B3TNlXHXyhzwb+SPPM6R7q/p2j9SArK9e6S2SwbmVebgfIThY7prSirkkzsIr3MermcK5XdrMMMfMi+BxD3uZ69rY2y8sVNb0DAvlBNqsx7fnQSZDSvRF5CfSL7CuvltvXJ57XdJ+qizcLn7A9MA/BK5PXf22KfF7FqtTy2BItykS1mfiYAhxeUgB3c4T0Aja/h7+oZPXBg3T8XGr8Wqzd3b/XrUOAF54FX+mZlxmWr4GESgEYPZO5DYrQxBuHa3gQOG+BlM0FovJQopvDarmB5A7RsM7zMgoAauvV3fMjl77dAy94M7xYC6dp7gN3+CPx/ZTs+sH1o+N/jmd8ueoq/nQAAAABJRU5ErkJggg=="/>
+            <circle class="cls-3" cx="23.1667" cy="20.5872" r="10"/>
+          </g>
+          <path class="cls-4" d="M26.6667,20.59a3.5,3.5,0,1,1-3.5006-3.5027A3.4969,3.4969,0,0,1,26.6667,20.59Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

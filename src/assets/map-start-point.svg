@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2, .cls-4 {
+        opacity: 0.2;
+      }
+
+      .cls-3 {
+        fill: #626f7a;
+      }
+
+      .cls-4 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>zenegyicon-start-point</title>
+  <g class="cls-1">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="design">
+        <g>
+          <g class="cls-2">
+            <circle class="cls-3" cx="50" cy="50" r="50"/>
+          </g>
+          <g>
+            <image class="cls-4" width="45" height="45" transform="translate(27.8357 30.4128)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAACXBIWXMAAAsSAAALEgHS3X78AAAEUklEQVRYR9WY65KjOAxGj9Ppy/Rmbu//krs7fU+nmR/2B5+FDSS7VTOjKpUMMXAsZEkkDcPAnya7tQm/o+zXJmyRlFJamyMZ/odXezF0AN0M7ZdduoB0znUdULc9+GHJngu/2dMGnFYUs1ADDsCHjfPkcuut8KueXoDdmd3ZcfS4w36EsS9gs9cXPd0AFthVGV+FscNLBHkyewrHmkNKaRW8C90BFti+jK/LWMdSXeNefe9oIoNT5q+CN6EDsL9+AV4XvQlW8Mr/7uVj0TfTXTkn8BE+pZR64Evh4fEpDwrw1vSu2AgOGfpE9ugb8Aq8FN2X4135TXJiektNmUEXL8eQuCJD3ZAhPzX0jglccT2QgY9kwOeiT0Vb8T9uyl6YrHla0PLwHXAP/FX0UOw9GVwed0+/M3n4CXhkeiMOPQT9oBMmFXTHy4rhWzLYAfhc9Es5PpDB5W1tRm3AVybgu3I/zYF+GmyGSc/TvgH31F4+kGG/AV/L+DPZ44LeM0EfyV5+Bn5QLwomUE+DVf6O3m5Bxw0YQ8OhpV/I0J+Ye1rx/Egd81CnwmOxDu+pc5QR2kIDJi8rPFrQX4HvTNAH+tAv5PASsLKKp8DXYh3+g4YseTpC3zJtQsW14AXdi+kesKfAFybw2Bb0N2KRpY2odCdwaYxpPVDQyhQwAXs28XQZq2qiBILiOkInszFEPLYFf8+U7pSrPU8L2oHfyJtS16k4xYoac/goaxvRob18qxreBNXvnqcd+DZo6zpBN4FhvbhEeC3AF7IP5zQPprQV518zvzbGMWE8yhI0tG+gRXgI+bn4oHSBYnYma9BjH2DjNSXYS9TvMZMlaL9JbOJjT+yNvdKa7qHzPv/I/PpYCQnjUVrQcdV6YCwGUb3SyQ5MbakKiKvOq9f2arjZ075C7we8H1ZBUJvpDRBlvsZexr0tdauiEithF3zN08qz8rAerqLgZRvyA30Bsff4ATwU+1hU4PK4HFW98bWGKcZxbOKfyA9WnvXS/Ea9CO89BP0P8G/RB+bg77Tje5QRehiGoXwaJrvIQ0Nl1z+t3MNH6t7Dz+taQf9NhpbHn2mHyNnh0YJW5Yq9hH5fg34gQws8QsvTMTwq6aU8hz4yVTkvs1DHrL+F3u8KEYVHz9PVRlz83LIQgQl6x7xd1O/6lHpm+kZUWYbpTSnjaPM9mH2ijmcPjc3hIfHskcg3FbA2nnvRP7Xc054u49d4K+Utehka0MHbDh7PebzGftihvSh50x8LzCxrXPJnjeCieGbxVOgb1Cuip81YUWMl9A3YlSZ08XZiDu6ZxfN3bDE9jDwLtTSW7m5YSLqe7oA7tGAE6sAO7eCyp3BcPWMJGLj4/+ld0EQNHKEF5Quu4pcNHpasQsMMXNYX0GvgB7MR3mN3MzBshJZ04GXHlMMcWuMKkjNhJWdBSwweatjWcXzAeHwurOQiaJewgFW5FNTlP0P/CtnxB8pPRc3fGMewn/YAAAAASUVORK5CYII="/>
+            <g>
+              <circle class="cls-3" cx="50.0062" cy="50" r="8.75"/>
+              <path class="cls-5" d="M50.0061,42.5a7.5,7.5,0,1,1-7.5,7.5,7.5082,7.5082,0,0,1,7.5-7.5m0-2.5a10,10,0,1,0,10,10,10,10,0,0,0-10-10Z"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
