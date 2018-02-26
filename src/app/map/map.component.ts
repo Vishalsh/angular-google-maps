@@ -4,6 +4,7 @@ import {} from '@types/googlemaps';
 
 import {RouteService} from '../route/route.service';
 import {Location} from '../route/location';
+import { mapStyles, COLORS } from './map.styles';
 
 @Component({
   selector: 'app-map',
@@ -27,7 +28,8 @@ export class MapComponent {
         "lng": 76.61427
       },
       zoom: 10,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: mapStyles
     };
     this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
   }
@@ -37,7 +39,7 @@ export class MapComponent {
       position: this.route[0],
       map: this.map,
       icon: {
-        url: '../../assets/map-start-point.svg',
+        url: '../../assets/images/map-start-point.svg',
         size: new google.maps.Size(150, 150),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(75, 75),
@@ -52,7 +54,7 @@ export class MapComponent {
       position: this.route[this.route.length - 1],
       map: this.map,
       icon: {
-        url: '../../assets/map-end-point.svg',
+        url: '../../assets/images/map-end-point.svg',
         size: new google.maps.Size(150, 150),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(75, 75),
@@ -68,9 +70,8 @@ export class MapComponent {
     const line = new google.maps.Polyline({
       path: [],
       geodesic: true,
-      strokeColor: '#FF0000',
-      strokeOpacity: 1.0,
-      strokeWeight: 2,
+      strokeColor: COLORS.BLUE_GREY,
+      strokeWeight: 3,
       editable: false,
       map: this.map
     });
